@@ -42,6 +42,9 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="168" height="103.66666666666667"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" image="minus" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="subDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b30-m1-qda"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgz-GN-oOA" userLabel="Sub Button">
                                                         <rect key="frame" x="193" y="0.0" width="168" height="103.66666666666667"/>
@@ -49,6 +52,9 @@
                                                         <buttonConfiguration key="configuration" style="filled" image="plus" catalog="system">
                                                             <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="addDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EBr-Xc-uLV"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -60,6 +66,9 @@
                                                     <color key="titleColor" systemColor="systemRedColor"/>
                                                 </state>
                                                 <buttonConfiguration key="configuration" style="filled" image="trash.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="clearDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kkM-fU-ZaJ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -75,10 +84,14 @@
                             <constraint firstItem="Xli-ec-ng4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="yBK-Dn-JTd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="countLabel" destination="w5P-5N-6Py" id="w1D-Ek-83L"/>
+                        <outlet property="historyText" destination="Jye-aR-iSJ" id="SAZ-9Z-2bB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-30" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="-552" y="-54"/>
         </scene>
     </scenes>
     <resources>
