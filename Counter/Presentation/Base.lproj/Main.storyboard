@@ -41,17 +41,16 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWT-zs-zxX" userLabel="Add Button">
                                                         <rect key="frame" x="0.0" y="0.0" width="168" height="103.66666666666667"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" image="minus" catalog="system"/>
+                                                        <buttonConfiguration key="configuration" style="tinted" image="minus" catalog="system"/>
                                                         <connections>
                                                             <action selector="subDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b30-m1-qda"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgz-GN-oOA" userLabel="Sub Button">
                                                         <rect key="frame" x="193" y="0.0" width="168" height="103.66666666666667"/>
+                                                        <color key="tintColor" systemColor="systemRedColor"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" image="plus" catalog="system">
-                                                            <color key="baseBackgroundColor" systemColor="systemRedColor"/>
-                                                        </buttonConfiguration>
+                                                        <buttonConfiguration key="configuration" style="tinted" image="plus" catalog="system"/>
                                                         <connections>
                                                             <action selector="addDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EBr-Xc-uLV"/>
                                                         </connections>
@@ -65,7 +64,7 @@
                                                 <state key="normal" image="trash.fill" catalog="system">
                                                     <color key="titleColor" systemColor="systemRedColor"/>
                                                 </state>
-                                                <buttonConfiguration key="configuration" style="filled" image="trash.fill" catalog="system"/>
+                                                <buttonConfiguration key="configuration" style="tinted" image="trash.fill" catalog="system"/>
                                                 <connections>
                                                     <action selector="clearDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kkM-fU-ZaJ"/>
                                                 </connections>

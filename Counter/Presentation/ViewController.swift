@@ -49,14 +49,14 @@ class ViewController: UIViewController {
 	
 	@IBAction func clearDidTap(_ sender: Any) {
 		count = 0
-		countLabel.text = "\(count)"
+		animatedCountTextUpdate()
 		updateHistory(for: .clear)
 	}
 	
 //MARK: - Private Methods
 	private func updateCount(by number: Int) {
 		count += number
-		countLabel.text = "\(count)"
+		animatedCountTextUpdate()
 	}
 	
 	private func updateHistory(for operation: Operation) {
@@ -67,5 +67,15 @@ class ViewController: UIViewController {
 		}
 		let range = NSRange(location: historyText.text.count - 1, length: 0)
 		historyText.scrollRangeToVisible(range)
+	}
+	
+	private func animatedCountTextUpdate() {
+		UIView.transition(
+			with: countLabel,
+			duration: 0.25,
+			options: .transitionFlipFromBottom
+		) {
+			self.countLabel.text = "\(self.count)"
+		}
 	}
 }
