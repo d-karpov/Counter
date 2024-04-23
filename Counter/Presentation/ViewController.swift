@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 //MARK: - Private Properties
 	private var count: Int = 0
 	private var currentDateTime: String {
-		Date.now.formatted(date: .numeric, time: .shortened)
+		Date.now.formatted(date: .numeric, time: .standard)
 	}
 	private enum Operation: String {
 		case start = "История изменений:\n"
