@@ -58,13 +58,29 @@
 			children = (
 				D3CDEF412BD6EE3600F4CB2D /* AppDelegate.swift */,
 				D3CDEF432BD6EE3600F4CB2D /* SceneDelegate.swift */,
-				D3CDEF452BD6EE3600F4CB2D /* ViewController.swift */,
-				D3CDEF472BD6EE3600F4CB2D /* Main.storyboard */,
-				D3CDEF4A2BD6EE3700F4CB2D /* Assets.xcassets */,
-				D3CDEF4C2BD6EE3700F4CB2D /* LaunchScreen.storyboard */,
-				D3CDEF4F2BD6EE3700F4CB2D /* Info.plist */,
+				D3CDEF552BD7307C00F4CB2D /* Presentation */,
+				D3CDEF562BD7309B00F4CB2D /* Resources */,
 			);
 			path = Counter;
+			sourceTree = "<group>";
+		};
+		D3CDEF552BD7307C00F4CB2D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				D3CDEF472BD6EE3600F4CB2D /* Main.storyboard */,
+				D3CDEF452BD6EE3600F4CB2D /* ViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D3CDEF562BD7309B00F4CB2D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D3CDEF4F2BD6EE3700F4CB2D /* Info.plist */,
+				D3CDEF4A2BD6EE3700F4CB2D /* Assets.xcassets */,
+				D3CDEF4C2BD6EE3700F4CB2D /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,7 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Counter/Info.plist;
+				INFOPLIST_FILE = Counter/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -320,7 +336,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Counter/Info.plist;
+				INFOPLIST_FILE = Counter/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
